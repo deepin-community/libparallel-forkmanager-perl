@@ -1,0 +1,26 @@
+Source: libparallel-forkmanager-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Damyan Ivanov <dmn@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 11)
+Build-Depends-Indep: perl,
+                     libmoo-perl,
+                     libtest-warn-perl,
+                     libutf8-all-perl
+Standards-Version: 4.2.1
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libparallel-forkmanager-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libparallel-forkmanager-perl.git
+Homepage: https://metacpan.org/release/Parallel-ForkManager
+
+Package: libparallel-forkmanager-perl
+Architecture: all
+Depends: ${perl:Depends},
+         ${misc:Depends},
+         libmoo-perl
+Description: simple parallel processing fork manager for Perl
+ Parallel::ForkManager Perl module is intended for use in operations that can
+ be done in parallel where the number of processes to be forked off should be
+ limited. Typical use is a downloader which will be retrieving
+ hundreds/thousands of files.

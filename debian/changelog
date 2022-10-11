@@ -1,0 +1,158 @@
+libparallel-forkmanager-perl (2.02-1) unstable; urgency=medium
+
+  * Team upload.
+  * Install upstream CONTRIBUTORS and CODE_OF_CONDUCT files.
+  * Import upstream version 2.02.
+  * debian/upstream/metadata: update Contact.
+  * debian/copyright: fix copyright holder's spelling.
+  * Add (build) dependency on libmoo-perl.
+  * Declare compliance with Debian Policy 4.2.1.
+  * Remove trailing whitespace from debian/*.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 09 Nov 2018 23:07:45 +0100
+
+libparallel-forkmanager-perl (1.20-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ Lucas Kanashiro ]
+  * Import upstream version 1.20
+  * Bump debhelper compatibility level to 11
+  * Declare compliance with Debian Policy 4.1.5
+  * Update years of upstream copyright
+
+ -- Lucas Kanashiro <kanashiro@debian.org>  Thu, 26 Jul 2018 04:09:30 -0300
+
+libparallel-forkmanager-perl (1.19-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+
+  [ Lucas Kanashiro ]
+  * Import upstream version 1.19
+  * debian/upstream/metadata: update Contact
+  * Remove unnecessary spelling patch, applied by upstream
+
+ -- Lucas Kanashiro <kanashiro@debian.org>  Wed, 20 Jul 2016 14:31:53 -0300
+
+libparallel-forkmanager-perl (1.18-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * Import upstream version 1.18.
+  * Declare compliance with Debian Policy 3.9.8.
+  * Drop versioned Test::More build dependency after squeeze is EOL.
+  * Add a patch to fix spelling mistakes in the POD.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 17 Apr 2016 15:09:19 +0200
+
+libparallel-forkmanager-perl (1.17-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 1.17.
+  * Add build dependency on Test::More 0.94.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 29 Nov 2015 16:16:45 +0100
+
+libparallel-forkmanager-perl (1.16-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * Add debian/upstream/metadata.
+  * Update upstream contact.
+  * Mark package as autopkgtest-able.
+  * Declare compliance with Debian Policy 3.9.6.
+  * Bump debhelper compatibility level to 9.
+  * Add build dependency on libtest-warn-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 22 Nov 2015 17:45:54 +0100
+
+libparallel-forkmanager-perl (1.06-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Add years of upstream copyright.
+  * Declare compliance with Debian Policy 3.9.5.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 02 Jan 2014 21:35:13 +0100
+
+libparallel-forkmanager-perl (1.05-1) unstable; urgency=low
+
+  * Team upload.
+  * New upstream release.
+  * Drop pod-errors.patch, applied upstream.
+  * Bump debhelper compatibility level to 8.
+  * Drop version from perl build dependency.
+  * debian/control: move Homepage field to Source section.
+  * Add build dependency on libutf8-all-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 18 Oct 2013 20:24:49 +0200
+
+libparallel-forkmanager-perl (1.03-1) unstable; urgency=low
+
+  * Imported Upstream version 1.03
+    + updated pod-errors.patch fixing misdocumentation of temporary directory
+      handling
+
+ -- Damyan Ivanov <dmn@debian.org>  Mon, 01 Apr 2013 16:04:36 +0300
+
+libparallel-forkmanager-perl (1.02-1) unstable; urgency=low
+
+  [ John Lightsey ]
+  [John Lightsey]
+  * New upstream release (closes: #610384)
+  * Update debian/rules and debian/copyright
+
+  [ Damyan Ivanov ]
+  * Take over for the Debian Perl Group with maintainer's permission
+    (http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=610384#20)
+  * debian/control: Added: Vcs-Git field (source stanza); Vcs-Browser
+    field (source stanza). Changed: Homepage field changed to
+    metacpan.org URL; Maintainer set to Debian Perl Group <pkg-perl-
+    maintainers@lists.alioth.debian.org> (was: John Lightsey
+    <lightsey@debian.org>); added myself to Uploaders.
+  * Add debian/watch.
+  * debian/copyright: Source URL changed to metacpan.org URL.
+  * control: improve description by replacing 'This module' by module name and
+    removing article from short description's start
+  * slight adjustment to d/copyright to bring it in line with DEP-5
+  * stop shipping redundant README in the package
+  * Standards-Version: 3.9.4
+  * add patch fixing two errors in embedded documentation
+
+ -- Damyan Ivanov <dmn@debian.org>  Mon, 01 Apr 2013 00:28:40 +0300
+
+libparallel-forkmanager-perl (0.7.5-2) unstable; urgency=low
+
+  * Update standards version to 3.7.3.0
+  * Move homepage in description to Homepage field in debian/control
+  * Check for existence of $(TMP)/usr/lib/perl5 before removing
+    closes: #467768
+  * Update copyright file to note the copyright of Debian specific changes
+  * Change character encoding of copyright file for lintian
+
+ -- John Lightsey <lightsey@debian.org>  Sun, 09 Mar 2008 23:55:00 -0500
+
+libparallel-forkmanager-perl (0.7.5-1) unstable; urgency=low
+
+  * Initial Release.
+    closes: #368553
+
+ -- John Lightsey <lightsey@debian.org>  Tue, 23 May 2006 18:42:00 -0600
